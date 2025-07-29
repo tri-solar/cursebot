@@ -30,6 +30,13 @@ module.exports = {
           await message.reply("Video Speichern");
           console.log("Garmin mentioned 🥶");
         }
+
+        // Random chance to say "das waren die mods"
+        if (Math.random() < 0.1) {
+          // 10% chance
+          await message.reply("Das waren wohl die mods...");
+          console.log("Replied with 'das waren die mods'");
+        }
       } catch (err) {
         console.error("Failed to react to message:", err);
       }
