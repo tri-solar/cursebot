@@ -23,6 +23,7 @@ module.exports = {
       "Was laberst du 💭❓",
       "Bisschen leiser bitte 🙏",
       "Bro denkt er ist lustig 😭",
+      "so schön und schlau wie der drache 😁",
     ];
 
     const curse = curses[Math.floor(Math.random() * curses.length)];
