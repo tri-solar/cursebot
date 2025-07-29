@@ -8,6 +8,7 @@ module.exports = {
     console.log("Author ID:", message.author.id);
 
     if (!message.author.bot) {
+      const content = message.content.toLowerCase();
       try {
         if (message.author.id === targetLoserId) {
           await message.react("🤓");
