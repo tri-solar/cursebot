@@ -37,6 +37,23 @@ module.exports = {
           console.log("Free Palestine 🇵🇸");
         }
 
+        // ok check
+        if (content.includes("ok")) {
+          await message.react("🆗");
+          console.log("🆗");
+        }
+
+        // projekt brot check
+        if (
+          content.includes("projekt brot") ||
+          content.includes("projeggd brod")
+        ) {
+          await message.reply(
+            "eier so viel wie ihr wollt, sonsd hole ich meine wurscht immer beim bägger dass ich weiß wos her kommt, 2 scheiben brod nur zur dego",
+          );
+          console.log("brod");
+        }
+
         // clanker check
         if (content.includes("clanker")) {
           await message.react("😢");
