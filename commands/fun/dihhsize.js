@@ -12,7 +12,7 @@ module.exports = {
     ),
   async execute(interaction) {
     const targetUser = interaction.options.getUser("of");
-    const size = Math.floor(Math.random() * 51);
+    const size = (Math.random() * (32 - 0.5) + 0.5).toFixed(1);
 
     await interaction.reply(`<@${targetUser.id}> has a ${size}cm dihh`);
   },
