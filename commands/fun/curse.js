@@ -5,10 +5,10 @@ module.exports = {
     .setName("curse")
     .setDescription("Replies with a Curse!")
     .addUserOption((option) =>
-      option.setName("t").setDescription("User to curse").setRequired(true),
+      option.setName("to").setDescription("User to curse").setRequired(true),
     ),
   async execute(interaction) {
-    const targetUser = interaction.options.getUser("t");
+    const targetUser = interaction.options.getUser("to");
 
     const curses = [
       "Sybau 💔",
