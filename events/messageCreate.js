@@ -16,6 +16,11 @@ module.exports = {
           await message.react("🔥");
           console.log("Reacted with 🔥 emoji");
         }
+        // garmin 🥶 check
+        if (content.includes("garmin")) {
+          await message.reply("Video Speichern");
+          console.log("Garmin mentioned 🥶");
+        }
       } catch (err) {
         console.error("Failed to react to message:", err);
       }
