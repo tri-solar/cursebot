@@ -47,6 +47,14 @@ module.exports = {
           console.log("🆗");
         }
 
+        // bwl check
+        if (content.includes("bwl")) {
+          await message.reply({
+            content: "",
+            files: ["../bwl.png"],
+          });
+        }
+
         // projekt brot check
         if (
           content.includes("projekt brot") ||
