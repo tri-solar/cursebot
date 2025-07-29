@@ -15,15 +15,19 @@ module.exports = {
       const content = message.content.toLowerCase();
       try {
         if (message.author.id === targetLoserId) {
-          const loserReaction =
-            loserReactions[Math.floor(Math.random() * loserReactions.length)];
-          await message.react(`${loserReaction}`);
-          console.log(`Reacted with ${loserReaction} emoji`);
+          if (Math.random() < 0.15) {
+            const loserReaction =
+              loserReactions[Math.floor(Math.random() * loserReactions.length)];
+            await message.react(`${loserReaction}`);
+            console.log(`Reacted with ${loserReaction} emoji`);
+          }
         } else if (message.author.id === targetSigmaId) {
-          const sigmaReaction =
-            sigmaReactions[Math.floor(Math.random() * sigmaReactions.length)];
-          await message.react(`${sigmaReaction}`);
-          console.log(`Reacted with ${sigmaReaction} emoji`);
+          if (Math.random() < 0.15) {
+            const sigmaReaction =
+              sigmaReactions[Math.floor(Math.random() * sigmaReactions.length)];
+            await message.react(`${sigmaReaction}`);
+            console.log(`Reacted with ${sigmaReaction} emoji`);
+          }
         }
         // garmin 🥶 check
         if (content.includes("garmin")) {
@@ -38,7 +42,7 @@ module.exports = {
         }
 
         // ok check
-        if (content.includes("ok")) {
+        if (content.includes("ok") || content.includes("okay")) {
           await message.react("🆗");
           console.log("🆗");
         }

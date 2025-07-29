@@ -44,6 +44,7 @@ module.exports = {
       "Und weida?",
       "so, forsa ist jetzt fertig heruntergeladen",
       "Ich hab euch etzadla schon tausend mal gsacht ghabt",
+      "Ich habe mich nie vor eine m knd ausgezogen!es gab vielleicht eine situation ie so war,... ich wollte dem autofahrer beweisen dass ich eier hab und hab die hose runtergelassen, das kind ufm rücksitz hb ich nicht gesehen",
     ];
 
     const quote = quotes[Math.floor(Math.random() * quotes.length)];
