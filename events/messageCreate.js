@@ -51,7 +51,7 @@ module.exports = {
         if (content.includes("bwl")) {
           await message.reply({
             content: "",
-            files: ["../bwl.png"],
+            files: ["./bwl.png"],
           });
         }
 
