@@ -3,8 +3,28 @@ const { SlashCommandBuilder } = require('discord.js');
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('curse')
-		.setDescription('Replies with a Curse!'),
+		.setDescription('Replies with a Curse!')
+		.addUserOption(option =>
+			option.setName('t')
+				.setDescription('User to curse')
+				.setRequired(true)
+		),
 	async execute(interaction) {
-		await interaction.reply('Sybau 💀');
+		const targetUser = interaction.options.getUser('t');
+
+		const curses = [
+			'Sybau 💔',
+			'Syfm 💔',
+			'Hdfs 😡',
+			'Okay Garmin Video Speichern 📹',
+			'Halt die Fresse ❤️‍🩹',
+			'Shut up 🤐',
+			'kys 🤡',
+			'beende es endlich 😉'
+		];
+
+		const curse = curses[Math.floor(Math.random() * curses.length)];
+
+		await interaction.reply(`${curse} <@${targetUser.id}>`);
 	},
 };
