@@ -45,7 +45,7 @@ module.exports = {
       "so, forsa ist jetzt fertig heruntergeladne",
       "ich hab zurzeit flodden oddo",
       "boah.... der war richtig guuuuuuuut",
-      "in 6-9 onaten haben einige haidermädchen ein pr souvenirs von mir hehe",
+      "in 6-9 monaten haben einige haidermädchen ein paar souvenirs von mir hehe",
       "Ich hab euch etzadla schon tausend mal gsacht ghabt",
       "Ich habe mich nie vor eine m knd ausgezogen!es gab vielleicht eine situation ie so war,... ich wollte dem autofahrer beweisen dass ich eier hab und hab die hose runtergelassen, das kind ufm rücksitz hb ich nicht gesehen",
     ];
