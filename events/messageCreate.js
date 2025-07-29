@@ -56,7 +56,7 @@ module.exports = {
         }
 
         // 1% ad spam chance
-        if (Math.random() < 0.01) {
+        if (Math.random() < 0.02) {
           await message.reply(
             "🔔 **Bitte erwerbe garmin pro 🥺** Keine Werbung, Nur 69,99€ im Monat. Ich muss frau und kinder ernähren ihr geizigen schmarotzer",
           );
