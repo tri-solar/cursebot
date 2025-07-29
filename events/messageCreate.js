@@ -55,6 +55,14 @@ module.exports = {
           });
         }
 
+        // 1% ad spam chance
+        if (Math.random() < 0.01) {
+          await message.reply(
+            "🔔 **Bitte erwerbe garmin pro 🥺** Keine Werbung, Nur 69,99€ im Monat. Ich muss frau und kinder ernähren ihr geizigen schmarotzer",
+          );
+          console.log("💩 Ad posted.");
+        }
+
         // projekt brot check
         if (
           content.includes("projekt brot") ||
