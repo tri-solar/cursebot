@@ -7,15 +7,21 @@ module.exports = {
     console.log("messageCreate event fired");
     console.log("Author ID:", message.author.id);
 
+    const loserReactions = ["🤓", "💀", "😂", "👴🏻"];
+
+    const sigmaReactions = ["🔥", "🐐", "🗣️", "🗿"];
+
     if (!message.author.bot) {
       const content = message.content.toLowerCase();
       try {
         if (message.author.id === targetLoserId) {
-          await message.react("🤓");
-          console.log("Reacted with 🤓 emoji");
+          const loserReaction =
+            loserReactions[Math.floor(Math.random() * loserReactions.length)];
+          await message.react(`${loserReaction}`);
+          console.log(`Reacted with ${loserReaction} emoji`);
         } else if (message.author.id === targetSigmaId) {
-          await message.react("🔥");
-          console.log("Reacted with 🔥 emoji");
+          await message.react(`${sigmaReaction}`);
+          console.log(`Reacted with ${sigmaReaction} emoji`);
         }
         // garmin 🥶 check
         if (content.includes("garmin")) {
