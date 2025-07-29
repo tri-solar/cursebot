@@ -1,17 +1,23 @@
 const { Events } = require("discord.js");
-const { userId } = require("../config.json");
+const { targetLoserId, targetSigmaId } = require("../config.json");
 
 module.exports = {
   name: Events.MessageCreate,
   async execute(message) {
-    console.log("messageCreate event fired"); // Add this line to confirm the event fires
+    console.log("messageCreate event fired");
+    console.log("Author ID:", message.author.id);
 
-    if (message.author.id === userId && !message.author.bot) {
+    if (!message.author.bot) {
       try {
-        await message.react("🤓");
-        console.log("Reacted with 🤓 emoji"); // Confirm reaction success
+        if (message.author.id === targetLoserId) {
+          await message.react("🤓");
+          console.log("Reacted with 🤓 emoji");
+        } else if (message.author.id === targetSigmaId) {
+          await message.react("🔥");
+          console.log("Reacted with 🔥 emoji");
+        }
       } catch (err) {
-        console.error("Failed to react to message:", err); // Log detailed error if react fails
+        console.error("Failed to react to message:", err);
       }
     }
   },
