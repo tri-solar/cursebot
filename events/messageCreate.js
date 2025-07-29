@@ -20,6 +20,8 @@ module.exports = {
           await message.react(`${loserReaction}`);
           console.log(`Reacted with ${loserReaction} emoji`);
         } else if (message.author.id === targetSigmaId) {
+          const sigmaReaction =
+            sigmaReactions[Math.floor(Math.random() * sigmaReactions.length)];
           await message.react(`${sigmaReaction}`);
           console.log(`Reacted with ${sigmaReaction} emoji`);
         }
