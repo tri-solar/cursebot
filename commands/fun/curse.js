@@ -17,8 +17,12 @@ module.exports = {
       "Okay Garmin Video Speichern 📹",
       "Halt die Fresse ❤️‍🩹",
       "Shut up 🤐",
-      "kys 🤡",
       "beende es endlich 😉",
+      "dumm wie Brot 🍞",
+      "Lauter als nötig 🔇",
+      "Was laberst du 💭❓",
+      "Bisschen leiser bitte 🙏",
+      "Bro denkt er ist lustig 😭",
     ];
 
     const curse = curses[Math.floor(Math.random() * curses.length)];
