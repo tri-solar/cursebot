@@ -1,5 +1,5 @@
 # cursebot
-Curses at a specific user witha random curse
+Curses at a specific user with a random curse
 
 ## usage
 /curse t: @user
