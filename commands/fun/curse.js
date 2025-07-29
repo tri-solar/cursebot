@@ -19,10 +19,9 @@ module.exports = {
       "Shut up 🤐",
       "beende es endlich 😉",
       "dumm wie Brot 🍞",
-      "Lauter als nötig 🔇",
-      "Was laberst du 💭❓",
-      "Bisschen leiser bitte 🙏",
-      "Bro denkt er ist lustig 😭",
+      "was laberst du ❓",
+      "Sei leise 🙏",
+      "bro denkt er ist lustig 😭",
       "so schön und schlau wie der drache 😁",
     ];
 
