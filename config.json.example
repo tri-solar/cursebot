@@ -2,5 +2,6 @@
 	"token": "1234567891011",
 	"clientId": "12345678920",
 	"guildId": "123456789",
-	"targetUserId": "12345678"
+	"targetLoserId": "12345678",
+	"targetSigmaId": "1234567"
 }
