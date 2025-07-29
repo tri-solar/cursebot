@@ -31,6 +31,18 @@ module.exports = {
           console.log("Garmin mentioned 🥶");
         }
 
+        // *srael check
+        if (content.includes("israel")) {
+          await message.reply("Free Palestine 🇵🇸");
+          console.log("Free Palestine 🇵🇸");
+        }
+
+        // clanker check
+        if (content.includes("clanker")) {
+          await message.react("😢");
+          console.log("😢");
+        }
+
         // Random chance to say "das waren die mods"
         if (Math.random() < 0.1) {
           // 10% chance
