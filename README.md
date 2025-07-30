@@ -38,6 +38,7 @@ When a message contains "bwl" the bot will reply with an image of drachenlord.
 ## configure the bot
 
 ! Node.js is needed for this bot. Check your node version with ```node -v``` !
+! be sure the bot gets the necessary permissions !
 
 copy config.json.example -> config.json
 
