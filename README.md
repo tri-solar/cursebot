@@ -33,6 +33,26 @@ When a message contains "bwl" the bot will reply with an image of drachenlord.
 
 ```/drache```: ich bin net der drache verdammde aggst!
 
+---
+
+## configure the bot
+
+! Node.js is needed for this bot. Check your node version with ```node -v``` !
+
+copy config.json.example -> config.json
+
+insert your tokens/IDs
+
+go to /cursebot/; run ```npm i ```
+
+and then ```node deploy-commands.js ```
+
+## run the bot
+
+```node bot.js```
+
+done!
+
 
 
 
